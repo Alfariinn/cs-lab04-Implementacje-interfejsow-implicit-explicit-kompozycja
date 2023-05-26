@@ -1,25 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Metadata;
-using System.Text;
-using System.Threading.Tasks;
-using ver1;
+﻿using ver1;
 using static ver1.IDevice;
 using static ver1.IDocument;
-
-namespace Zad1
+namespace Zad2
 {
-    public sealed class Copier : BaseDevice, IPrinter, IScanner
+    public class MultifunctionalDevice : BaseDevice, IFax, IPrinter, IScanner
     {
-        public int PrintCounter { get; private set; } = 0;
-        public int ScanCounter { get; private set; } = 0;
+        public int FaxCounter { get; private set; } = 0;
+        public  int PrintCounter { get; private set; } = 0;
+        public   int ScanCounter { get; private set; } = 0;
         public new int Counter { get; private set; } = 0;
-
 
         public void PowerOn()
         {
-            if (state == State.on) 
+            if (state == State.on)
                 return;
             state = State.on;
             Counter++;
@@ -36,30 +29,30 @@ namespace Zad1
         public void Print(in IDocument document)
         {
             if (GetState() == State.off)
-            return;
+                return;
             PrintCounter++;
 
             Console.WriteLine(DateTime.Now + @" Print: " + document.GetFileName());
 
         }
 
-        public void Scan(out IDocument document, FormatType formatType =FormatType.JPG)
+        public void Scan(out IDocument document, IDocument.FormatType formatType = FormatType.JPG)
         {
             if (GetState() == State.off)
             {
                 document = null;
-                return; 
+                return;
             }
             ScanCounter++;
-            switch (formatType) 
+            switch (formatType)
             {
-                case FormatType.PDF:
+                case IDocument.FormatType.PDF:
                     document = new PDFDocument("ImageScan" + ScanCounter + '.' + formatType.ToString().ToLowerInvariant());
                     break;
-                case FormatType.JPG:
+                case IDocument.FormatType.JPG:
                     document = new ImageDocument("ImageScan" + ScanCounter + '.' + formatType.ToString().ToLowerInvariant());
                     break;
-                case FormatType.TXT:
+                case IDocument.FormatType.TXT:
                     document = new TextDocument("ImageScan" + ScanCounter + '.' + formatType.ToString().ToLowerInvariant());
                     break;
                 default:
@@ -76,11 +69,18 @@ namespace Zad1
             Scan(out IDocument document, FormatType.JPG);
             Print(document);
         }
+
+
+
+
+        public void Fax(in IDocument document)
+        {
+            if (GetState() == State.off)
+                return;
+            FaxCounter++;
+
+            Console.WriteLine(DateTime.Now + @" Fax: " + document.GetFileName());
+
+        }
     }
-
-
-
-
-
-
 }

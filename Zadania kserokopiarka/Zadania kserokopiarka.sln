@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zad1", "Zadania kserokopiarka\Zad1.csproj", "{E03D5330-4AE7-441A-81EA-753AF96B63C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zad1", "Zadania kserokopiarka\Zad1.csproj", "{E03D5330-4AE7-441A-81EA-753AF96B63C5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementy rozwiązania", "Elementy rozwiązania", "{B38DDED0-68A2-4B29-944B-92F0E50C8C84}"
 	ProjectSection(SolutionItems) = preProject
@@ -12,7 +12,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementy rozwiązania", "El
 		..\UnitTestCopier.cs = ..\UnitTestCopier.cs
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadanie1UnitTests", "Zadanie1UnitTests\Zadanie1UnitTests.csproj", "{66D1EF99-273F-4F3D-9789-AE1295989724}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zadanie1UnitTests", "Zadanie1UnitTests\Zadanie1UnitTests.csproj", "{66D1EF99-273F-4F3D-9789-AE1295989724}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zad2", "Zad2\Zad2.csproj", "{1DE5572E-CA0F-4C7B-9E02-B08E158B8273}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadanie2UnitTests", "Zadanie2UnitTests\Zadanie2UnitTests.csproj", "{B82380CB-D885-489B-8216-A8D6D49396E4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1DE5572E-CA0F-4C7B-9E02-B08E158B8273} = {1DE5572E-CA0F-4C7B-9E02-B08E158B8273}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,6 +35,14 @@ Global
 		{66D1EF99-273F-4F3D-9789-AE1295989724}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66D1EF99-273F-4F3D-9789-AE1295989724}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66D1EF99-273F-4F3D-9789-AE1295989724}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DE5572E-CA0F-4C7B-9E02-B08E158B8273}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DE5572E-CA0F-4C7B-9E02-B08E158B8273}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DE5572E-CA0F-4C7B-9E02-B08E158B8273}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DE5572E-CA0F-4C7B-9E02-B08E158B8273}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B82380CB-D885-489B-8216-A8D6D49396E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B82380CB-D885-489B-8216-A8D6D49396E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B82380CB-D885-489B-8216-A8D6D49396E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B82380CB-D885-489B-8216-A8D6D49396E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
