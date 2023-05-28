@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zad1", "Zadania kserokopiarka\Zad1.csproj", "{E03D5330-4AE7-441A-81EA-753AF96B63C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zad1", "..\Zad1\Zadania kserokopiarka\Zad1.csproj", "{E03D5330-4AE7-441A-81EA-753AF96B63C5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementy rozwiązania", "Elementy rozwiązania", "{B38DDED0-68A2-4B29-944B-92F0E50C8C84}"
 	ProjectSection(SolutionItems) = preProject
@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zadanie2UnitTests", "Zadani
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zad3", "Zad3\Zad3.csproj", "{70528052-AE8C-4481-AC9B-92FF16155A77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadanie3UnitTests", "Zadanie3UnitTests\Zadanie3UnitTests.csproj", "{782BF268-BD65-4EE3-A1D7-9D985837F6AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zadanie3UnitTests", "Zadanie3UnitTests\Zadanie3UnitTests.csproj", "{782BF268-BD65-4EE3-A1D7-9D985837F6AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
