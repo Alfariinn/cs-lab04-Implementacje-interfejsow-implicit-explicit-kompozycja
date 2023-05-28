@@ -17,7 +17,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Zad1\Zad1.csproj" />
-    <ProjectReference Include="..\Zadania kserokopiarka\Zad1.csproj" />
   </ItemGroup>
 
 </Project>
